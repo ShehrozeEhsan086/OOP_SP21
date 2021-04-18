@@ -21,7 +21,7 @@ public class Lab8_Assignment_Q1_Runner {
         String tapeName = userInput.next();
         System.out.print("Enter Price of Audio-Book: ");
         int tapePrice = userInput.nextInt();
-        System.out.print("Enter Page Count: ");
+        System.out.print("Enter PLay Time: ");
         int playTime = userInput.nextInt();
         Tape audioBook = new Tape(tapeName,tapePrice,playTime);
 
