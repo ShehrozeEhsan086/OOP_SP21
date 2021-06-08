@@ -40,7 +40,7 @@ public class Lab14_Assignment_Runner {
                     arrayListNum = findAccount(accountNumber);
                     System.out.print("Enter the amount you want to deposit: ");
                     amount = userInput.nextDouble();
-                    accounts.get(accountNumber-1).deposit(amount);
+                    accounts.get(arrayListNum).deposit(amount);
                     write(accounts);
                     break;
                 case 4:
@@ -68,7 +68,7 @@ public class Lab14_Assignment_Runner {
                     System.out.print("Enter account number: ");
                     accountNumber = userInput.nextInt();
                     arrayListNum = findAccount(accountNumber);
-                    System.out.println("Account Balance: Rs:"+accounts.get(accountNumber-1).balanceInquiry());
+                    System.out.println("Account Balance: Rs:"+accounts.get(arrayListNum).balanceInquiry());
                     break;
                 case 0:
                     status = false;
