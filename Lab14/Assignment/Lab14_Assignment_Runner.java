@@ -130,7 +130,6 @@ public class Lab14_Assignment_Runner {
     }
 
     public static int findAccount(int accountNumber){
-        Account temp = null;
         ObjectInputStream fileReader = null;
         int i = 0;
         try{
@@ -139,7 +138,6 @@ public class Lab14_Assignment_Runner {
             while(true){
                 Account accountRead = (Account) fileReader.readObject();
                 if(accountRead.getAccountNumber()==accountNumber){
-                    temp = accountRead;
                     break;
                 }
                 i++;
