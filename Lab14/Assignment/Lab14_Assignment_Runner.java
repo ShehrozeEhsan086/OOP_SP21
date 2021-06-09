@@ -134,7 +134,6 @@ public class Lab14_Assignment_Runner {
         int i = 0;
         try{
             fileReader = new ObjectInputStream(new FileInputStream("Account"));
-
             while(true){
                 Account accountRead = (Account) fileReader.readObject();
                 if(accountRead.getAccountNumber()==accountNumber){
